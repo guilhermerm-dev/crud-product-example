@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>crud_product_domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="UseCases\" />
+  </ItemGroup>
+</Project>
