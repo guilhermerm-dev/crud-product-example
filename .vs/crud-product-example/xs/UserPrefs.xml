@@ -1,24 +1,23 @@
-﻿<Properties StartupConfiguration="{EF6ECBE2-C5CF-41CE-AB4F-2D6365DCD021}|Default">
-  <MonoDevelop.Ide.ItemProperties.crud-product-domain FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-domain/Entities/Product.cs">
-    <Files>
-      <File FileName="crud-product-domain/Entities/Product.cs" Line="6" Column="9" />
-    </Files>
+﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="crud-product-example" expanded="True">
-            <Node name="crud-product-domain" expanded="True">
-              <Node name="Entities" expanded="True">
-                <Node name="Product.cs" selected="True" />
+            <Node name="crud-product-api" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductController.cs" selected="True" />
               </Node>
+            </Node>
+            <Node name="crud-product-domain" expanded="True">
+              <Node name="UseCases" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.crud-product-api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.crud-product-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

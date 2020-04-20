@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-example/crud-product-example.csproj": {}
+    "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj": {}
   },
   "projects": {
-    "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-example/crud-product-example.csproj": {
+    "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-example/crud-product-example.csproj",
-        "projectName": "crud-product-example",
-        "projectPath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-example/crud-product-example.csproj",
+        "projectUniqueName": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj",
+        "projectName": "crud-product-shared",
+        "projectPath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj",
         "packagesPath": "/Users/guilhermerm/.nuget/packages/",
-        "outputPath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-example/obj/",
+        "outputPath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/guilhermerm/.config/NuGet/NuGet.Config"
@@ -46,9 +46,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
