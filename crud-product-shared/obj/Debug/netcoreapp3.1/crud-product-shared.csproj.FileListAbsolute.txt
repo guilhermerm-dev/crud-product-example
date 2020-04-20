@@ -1,0 +1,9 @@
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/bin/Debug/netcoreapp3.1/crud-product-shared.deps.json
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/bin/Debug/netcoreapp3.1/crud-product-shared.dll
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/bin/Debug/netcoreapp3.1/crud-product-shared.pdb
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.csprojAssemblyReference.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.csproj.CoreCompileInputs.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.AssemblyInfoInputs.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.AssemblyInfo.cs
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.dll
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/obj/Debug/netcoreapp3.1/crud-product-shared.pdb

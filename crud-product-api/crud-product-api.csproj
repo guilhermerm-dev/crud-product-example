@@ -10,6 +10,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Configuration\" />
     <Folder Include="Dto\" />
+    <Folder Include="Presenters\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />

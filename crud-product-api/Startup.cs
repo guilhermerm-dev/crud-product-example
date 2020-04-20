@@ -1,4 +1,5 @@
 using crud_product_api.Configuration;
+using crud_product_api.Presenters;
 using crud_product_domain.UseCases;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,11 +24,13 @@ namespace crud_product_api
         {
 
             //DependencyInjection
+            services.AddTransient<ProductPresenter, ProductPresenter>();
             services.AddTransient<CreateProduct, CreateProduct>();
             services.AddTransient<DeleteProduct, DeleteProduct>();
             services.AddTransient<EditProduct, EditProduct>();
             services.AddTransient<GetAllProducts, GetAllProducts>();
             services.AddTransient<GetProductByCode, GetProductByCode>();
+
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

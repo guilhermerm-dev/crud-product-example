@@ -5,7 +5,7 @@ namespace crud_product_domain.UseCases
 {
     public class GetAllProducts
     {
-        public IList<Product> Execute()
+        public IEnumerable<Product> Execute()
         {
             List<Product> products = new List<Product>();
             products.Add(new Product(1, "Produto A", "Produto A", 1, 10));
