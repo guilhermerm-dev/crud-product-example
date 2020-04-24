@@ -15,7 +15,6 @@
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/crud-product-domain.pdb
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.csprojAssemblyReference.cache
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.csproj.CoreCompileInputs.cache
-/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.MvcApplicationPartsAssemblyInfo.cs
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.MvcApplicationPartsAssemblyInfo.cache
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfoInputs.cache
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfo.cs
@@ -26,3 +25,7 @@
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.dll
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.pdb
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.genruntimeconfig.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/Dapper.dll
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/crud-product-infra.dll
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/crud-product-infra.pdb

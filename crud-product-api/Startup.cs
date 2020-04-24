@@ -1,6 +1,8 @@
 using crud_product_api.Configuration;
 using crud_product_api.Presenters;
+using crud_product_domain.Repositories;
 using crud_product_domain.UseCases;
+using crud_product_infra.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -30,8 +32,7 @@ namespace crud_product_api
             services.AddTransient<EditProduct, EditProduct>();
             services.AddTransient<GetAllProducts, GetAllProducts>();
             services.AddTransient<GetProductByCode, GetProductByCode>();
-
-
+            services.AddTransient<IProductRepository, ProductRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 

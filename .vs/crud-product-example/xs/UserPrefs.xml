@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-api/Controllers/ProductController.cs">
     <Files>
-      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="51" Column="51" />
-      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" Line="31" Column="64" />
+      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="26" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +14,19 @@
               <Node name="Presenters" expanded="True" />
             </Node>
             <Node name="crud-product-domain" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Repositories" expanded="True" />
               <Node name="UseCases" expanded="True" />
+            </Node>
+            <Node name="crud-product-infra" expanded="True">
+              <Node name="ConnectionFactory" expanded="True">
+                <Node name="Abstract" expanded="True" />
+              </Node>
+              <Node name="Connectors" expanded="True">
+                <Node name="Abstract" expanded="True" />
+              </Node>
+              <Node name="Enums" expanded="True" />
+              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,7 +37,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-infra/Clients/PostgreSqlClient.cs" relfile="crud-product-infra/Clients/PostgreSqlClient.cs" line="16" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
