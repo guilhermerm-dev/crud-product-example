@@ -10,5 +10,6 @@ namespace crud_product_domain.Repositories
         void EditProduct(int code, string name, string description, decimal price, int quantity);
         IEnumerable<Product> GetAllProducts();
         Product GetProductByCode(int code);
+        bool IsProductAlreadyExists(int code);
     }
 }

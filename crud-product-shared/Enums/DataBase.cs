@@ -1,5 +1,4 @@
-﻿using System;
-namespace crud_product_infra.Enums
+﻿namespace crud_product_shared.Enums
 {
     public enum DataBase
     {

@@ -10,7 +10,8 @@
         "dependencies": {
           "Dapper": "2.0.35",
           "Npgsql": "4.1.3.1",
-          "crud-product-domain": "1.0.0"
+          "crud-product-domain": "1.0.0",
+          "crud-product-shared": "1.0.0"
         },
         "runtime": {
           "crud-product-infra.dll": {}
@@ -43,6 +44,11 @@
       "crud-product-domain/1.0.0": {
         "runtime": {
           "crud-product-domain.dll": {}
+        }
+      },
+      "crud-product-shared/1.0.0": {
+        "runtime": {
+          "crud-product-shared.dll": {}
         }
       }
     }
@@ -82,6 +88,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
     },
     "crud-product-domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "crud-product-shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

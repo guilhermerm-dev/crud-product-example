@@ -25,5 +25,8 @@
     <ProjectReference Include="..\crud-product-infra\crud-product-infra.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\crud-product-shared\crud-product-shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -5,4 +5,7 @@
     <RootNamespace>crud_product_shared</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
 </Project>

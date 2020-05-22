@@ -1,6 +1,5 @@
 ﻿using System;
 using crud_product_infra.Abstract;
-using crud_product_infra.Enums;
 
 namespace crud_product_infra.ConnectionFactory.Abstract
 {
@@ -8,16 +7,10 @@ namespace crud_product_infra.ConnectionFactory.Abstract
     {
         public abstract DataBaseConnector CreateDataBaseConnector(string connectionString);
 
-        public static DataBaseFactory DataBase(DataBase database)
+        public static DataBaseFactory DataBase(crud_product_shared.Enums.DataBase database) => database switch
         {
-            switch (database)
-            {
-                case Enums.DataBase.PostgreSql:
-                    return new PostgreFactory();
-                default:
-                    throw new ApplicationException("Database its not recognized");
-            }
-        }
-
+            crud_product_shared.Enums.DataBase.PostgreSql => new PostgreFactory(),
+            _ => throw new ApplicationException("Database its not recognized"),
+        };
     }
 }

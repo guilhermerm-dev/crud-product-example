@@ -26,9 +26,9 @@ namespace crud_product_api.Controllers
 
         [HttpGet("{code:int}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public ProductDto GetProductByCode(int code)
+        public ActionResult<ProductDto> GetProductByCode(int code)
         {
-            return _productPresenter.GetProductByCode(code);
+            return Ok(_productPresenter.GetProductByCode(code));
         }
 
         [HttpPost]

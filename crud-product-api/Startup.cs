@@ -14,6 +14,7 @@ namespace crud_product_api
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -21,11 +22,9 @@ namespace crud_product_api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //DependencyInjection
             services.AddTransient<ProductPresenter, ProductPresenter>();
             services.AddTransient<CreateProduct, CreateProduct>();
             services.AddTransient<DeleteProduct, DeleteProduct>();
@@ -36,11 +35,11 @@ namespace crud_product_api
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-            AutoMapperConfiguration.CreateAutoMapperConfiguration(services);
+            AutoMapperConfiguration.CreateConfiguration(services);
             SwaggerConfiguration.CreateConfiguration(services);
+            ConnectionConfiguration.CreateConfiguration(services, Configuration);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

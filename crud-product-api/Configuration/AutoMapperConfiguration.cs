@@ -8,7 +8,7 @@ namespace crud_product_api.Configuration
 {
     public class AutoMapperConfiguration
     {
-        public static void CreateAutoMapperConfiguration(IServiceCollection services)
+        public static void CreateConfiguration(IServiceCollection services)
         {
             var mapperConfiguration = new MapperConfiguration(config =>
             {
