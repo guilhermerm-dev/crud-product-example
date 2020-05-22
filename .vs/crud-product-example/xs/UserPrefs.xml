@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-api/Controllers/ProductController.cs">
     <Files>
-      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="26" Column="50" />
+      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="38" Column="54" />
+      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" Line="46" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,21 +15,15 @@
               <Node name="Presenters" expanded="True" />
             </Node>
             <Node name="crud-product-domain" expanded="True">
-              <Node name="Entities" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="UseCases" expanded="True" />
             </Node>
-            <Node name="crud-product-infra" expanded="True">
-              <Node name="ConnectionFactory" expanded="True">
-                <Node name="Abstract" expanded="True" />
-              </Node>
-              <Node name="Connectors" expanded="True">
-                <Node name="Abstract" expanded="True" />
-              </Node>
-              <Node name="Enums" expanded="True" />
-              <Node name="Repositories" expanded="True" />
-            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>product.Code.ToString</Value>
         </State>
       </Pad>
     </Pads>

@@ -19,8 +19,8 @@ namespace crud_product_infra.Repositories
             using var connection = DataBaseFactory.DataBase(_dataBase)
                                 .CreateDataBaseConnector(_connectionString)
                                 .Connect();
-            connection.Execute("INSERT INTO store.product VALUES (code, name , description , quantity, price) " +
-            "INTO (@code, @name, @description, @quantity, @price)", new
+            connection.Execute(@"INSERT INTO store.product (code, name , description , quantity, price) VALUES
+            (@code, @name, @description, @quantity, @price)", new
             {
                 code = product.Code,
                 name = product.Name,
@@ -32,12 +32,19 @@ namespace crud_product_infra.Repositories
 
         public void DeleteProduct(int code)
         {
-            throw new NotImplementedException();
+            using var connection = DataBaseFactory.DataBase(_dataBase)
+                                   .CreateDataBaseConnector(_connectionString)
+                                   .Connect();
+            connection.Execute("UPDATE store.product SET Is_Deleted = false WHERE Code = @code", new { code});
         }
 
-        public void EditProduct(Product product)
+        public void EditProduct(int code, string name, string description, decimal price, int quantity)
         {
-            throw new NotImplementedException();
+            using var connection = DataBaseFactory.DataBase(_dataBase)
+                                   .CreateDataBaseConnector(_connectionString)
+                                   .Connect();
+            connection.Execute("UPDATE store.product SET Name = @name, Description = @description, Price = @price, Quantity = @quantity WHERE Code = @code"
+                , new { code, name, price, quantity });
         }
 
         public IEnumerable<Product> GetAllProducts()

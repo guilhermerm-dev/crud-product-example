@@ -7,7 +7,7 @@ namespace crud_product_domain.Repositories
     {
         void CreateProduct(Product product);
         void DeleteProduct(int code);
-        void EditProduct(Product product);
+        void EditProduct(int code, string name, string description, decimal price, int quantity);
         IEnumerable<Product> GetAllProducts();
         Product GetProductByCode(int code);
     }
