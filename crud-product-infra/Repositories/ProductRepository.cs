@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Threading.Tasks;
 using crud_product_domain.Entities;
 using crud_product_domain.Repositories;
 using crud_product_infra.ConnectionFactory.Abstract;
@@ -17,12 +18,12 @@ namespace crud_product_infra.Repositories
             _configuration = configuration;
         }
 
-        public void CreateProduct(Product product)
+        public async Task CreateProduct(Product product)
         {
             using var connection = DataBaseFactory.DataBase(_configuration.DataBaseType)
                                 .CreateDataBaseConnector(_configuration.ConnectionString)
                                 .Connect();
-            connection.Execute(@"INSERT INTO store.product (code, name , description , quantity, price) VALUES
+            await connection.ExecuteAsync(@"INSERT INTO store.product (code, name , description , quantity, price) VALUES
             (@code, @name, @description, @quantity, @price)", new
             {
                 code = product.Code,
@@ -33,12 +34,12 @@ namespace crud_product_infra.Repositories
             }, commandType: CommandType.Text);
         }
 
-        public void DeleteProduct(int code)
+        public async Task DeleteProduct(int code)
         {
             using var connection = DataBaseFactory.DataBase(_configuration.DataBaseType)
                                    .CreateDataBaseConnector(_configuration.ConnectionString)
                                    .Connect();
-            connection.Execute("UPDATE store.product SET Is_Deleted = false WHERE Code = @code", new { code });
+            await connection.ExecuteAsync("UPDATE store.product SET Is_Deleted = true WHERE Code = @code", new { code });
         }
 
         public void EditProduct(int code, string name, string description, decimal price, int quantity)
@@ -50,20 +51,20 @@ namespace crud_product_infra.Repositories
                 , new { code, name, price, quantity });
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public async Task<IEnumerable<Product>> GetAllProducts()
         {
             using var connection = DataBaseFactory.DataBase(_configuration.DataBaseType)
                                    .CreateDataBaseConnector(_configuration.ConnectionString)
                                    .Connect();
-            return connection.Query<Product>("SELECT code, name , description , price, quantity FROM store.product WHERE Is_Deleted = false", commandType: CommandType.Text);
+            return await connection.QueryAsync<Product>("SELECT code, name , description , price, quantity FROM store.product WHERE Is_Deleted = false", commandType: CommandType.Text);
         }
 
-        public Product GetProductByCode(int code)
+        public async Task<Product> GetProductByCode(int code)
         {
             using var connection = DataBaseFactory.DataBase(_configuration.DataBaseType)
                                    .CreateDataBaseConnector(_configuration.ConnectionString)
                                    .Connect();
-            return connection.QueryFirstOrDefault<Product>("SELECT code, name , description , quantity, price FROM store.product WHERE code = @code AND Is_Deleted = false", new
+            return await connection.QueryFirstOrDefaultAsync<Product>("SELECT code, name , description , quantity, price FROM store.product WHERE code = @code AND Is_Deleted = false", new
             {
                 code,
             }, commandType: CommandType.Text);

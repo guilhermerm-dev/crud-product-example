@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using crud_product_api.Dto;
 using crud_product_domain.Entities;
@@ -26,29 +27,29 @@ namespace crud_product_api.Presenters
             _mapper = mapper;
         }
 
-        public IEnumerable<ProductDto> GetAllProducts()
+        public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
-            IEnumerable<Product> products = _getAllProducts.Execute();
+            IEnumerable<Product> products = await _getAllProducts.Execute();
             IEnumerable<ProductDto> productsDto = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(products);
             return productsDto;
         }
 
-        public ProductDto GetProductByCode(int code)
+        public async Task<ProductDto> GetProductByCode(int code)
         {
-            Product product = _getProductByCode.Execute(code);
+            Product product = await _getProductByCode.Execute(code);
             ProductDto productDto = _mapper.Map<Product, ProductDto>(product);
             return productDto;
         }
 
-        public void CreateProduct(ProductDto productDto)
+        public async Task CreateProduct(ProductDto productDto)
         {
             Product product = _mapper.Map<ProductDto, Product>(productDto);
-            _createProduct.Execute(product);
+            await _createProduct.Execute(product);
         }
 
-        public void DeleteProduct(int code)
+        public Task DeleteProduct(int code)
         {
-            _deleteProduct.Execute(code);
+            return _deleteProduct.Execute(code);
         }
 
         public void EditProduct(ProductDto productDto)

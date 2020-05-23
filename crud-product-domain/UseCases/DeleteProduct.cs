@@ -1,4 +1,6 @@
-﻿using crud_product_domain.Repositories;
+﻿using System.Threading.Tasks;
+using crud_product_domain.Error;
+using crud_product_domain.Repositories;
 
 namespace crud_product_domain.UseCases
 {
@@ -11,9 +13,12 @@ namespace crud_product_domain.UseCases
             _productRepository = productRepository;
         }
 
-        public void Execute(int code)
+        public Task Execute(int code)
         {
-            _productRepository.DeleteProduct(code);
+            if (_productRepository.IsProductAlreadyExists(code))
+                return _productRepository.DeleteProduct(code);
+
+            throw new ProductNotExistException($"Product code {code} not exists");
         }
     }
 }

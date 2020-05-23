@@ -1,20 +1,31 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-api/Presenters/ProductPresenter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-infra/Repositories/ProductRepository.cs">
     <Files>
-      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="38" Column="38" />
-      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" Line="46" Column="31" />
+      <File FileName="crud-product-api/Controllers/ProductController.cs" Line="37" Column="59" />
+      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" Line="47" Column="51" />
+      <File FileName="crud-product-domain/UseCases/GetProductByCode.cs" Line="18" Column="51" />
+      <File FileName="crud-product-domain/UseCases/CreateProduct.cs" Line="6" Column="39" />
+      <File FileName="crud-product-infra/Repositories/ProductRepository.cs" Line="35" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="crud-product-example" expanded="True">
             <Node name="crud-product-api" expanded="True">
-              <Node name="Presenters" expanded="True">
-                <Node name="ProductPresenter.cs" selected="True" />
-              </Node>
+              <Node name="Configuration" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Presenters" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
             <Node name="crud-product-domain" expanded="True">
+              <Node name="Error" expanded="True" />
+              <Node name="Repositories" expanded="True" />
               <Node name="UseCases" expanded="True" />
+            </Node>
+            <Node name="crud-product-infra" expanded="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="ProductRepository.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

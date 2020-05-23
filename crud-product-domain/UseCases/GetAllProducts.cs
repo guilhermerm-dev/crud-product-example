@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using crud_product_domain.Entities;
 using crud_product_domain.Repositories;
 
@@ -13,9 +14,9 @@ namespace crud_product_domain.UseCases
             _productRepository = productRepository;
         }
 
-        public IEnumerable<Product> Execute()
+        public async Task<IEnumerable<Product>> Execute()
         {
-            return _productRepository.GetAllProducts();
+            return await _productRepository.GetAllProducts();
         }
     }
 }

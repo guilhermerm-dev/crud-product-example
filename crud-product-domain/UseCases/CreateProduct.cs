@@ -1,4 +1,5 @@
-﻿using crud_product_domain.Entities;
+﻿using System.Threading.Tasks;
+using crud_product_domain.Entities;
 using crud_product_domain.Error;
 using crud_product_domain.Repositories;
 
@@ -13,16 +14,11 @@ namespace crud_product_domain.UseCases
             _productRepository = productRepository;
         }
 
-        public void Execute(Product product)
+        public async Task Execute(Product product)
         {
-            if (IsProductAlreadyExists(product.Code))
+            if (_productRepository.IsProductAlreadyExists(product.Code))
                 throw new ProductAlreadyExistsException($"Product with code {product.Code} already exists in data base.");
-            _productRepository.CreateProduct(product);
-        }
-
-        private bool IsProductAlreadyExists(int code)
-        {
-            return _productRepository.IsProductAlreadyExists(code);
+            await _productRepository.CreateProduct(product);
         }
     }
 }

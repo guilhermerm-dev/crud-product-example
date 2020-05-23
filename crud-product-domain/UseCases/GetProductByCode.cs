@@ -1,4 +1,5 @@
-﻿using crud_product_domain.Entities;
+﻿using System.Threading.Tasks;
+using crud_product_domain.Entities;
 using crud_product_domain.Repositories;
 
 namespace crud_product_domain.UseCases
@@ -12,9 +13,9 @@ namespace crud_product_domain.UseCases
             _productRepository = productRepository;
         }
 
-        public Product Execute(int code)
+        public async Task<Product> Execute(int code)
         {
-            return _productRepository.GetProductByCode(code);
+            return await _productRepository.GetProductByCode(code);
         }
     }
 }

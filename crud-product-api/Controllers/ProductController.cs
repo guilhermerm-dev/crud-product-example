@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using crud_product_api.Dto;
 using crud_product_api.Presenters;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace crud_product_api.Controllers
 {
@@ -19,31 +21,39 @@ namespace crud_product_api.Controllers
 
         [HttpGet]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public ActionResult<IEnumerable<ProductDto>> GetAllProducts()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAllProducts()
         {
-            return Ok(_productPresenter.GetAllProducts());
+            var result = await _productPresenter.GetAllProducts();
+            if (result.Count() > 0)
+                return Ok(result);
+
+            return NotFound("No datas have been founded");
         }
 
         [HttpGet("{code:int}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public ActionResult<ProductDto> GetProductByCode(int code)
+        public async Task<ActionResult<ProductDto>> GetProductByCode(int code)
         {
-            return Ok(_productPresenter.GetProductByCode(code));
+            var result = await _productPresenter.GetProductByCode(code);
+            if (result != null)
+                return Ok(result);
+
+            return NotFound("No datas have been founded");
         }
 
         [HttpPost]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
-        public ActionResult CreateProduct([FromBody] ProductDto product)
+        public async Task<ActionResult> CreateProduct([FromBody] ProductDto product)
         {
-            _productPresenter.CreateProduct(product);
+            await _productPresenter.CreateProduct(product);
             return CreatedAtAction("CreateProduct", product);
         }
 
         [HttpDelete("{code:int}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Delete))]
-        public ActionResult DeleteProduct(int code)
+        public async Task<ActionResult> DeleteProduct(int code)
         {
-            _productPresenter.DeleteProduct(code);
+            await _productPresenter.DeleteProduct(code);
             return Ok($"Product code: {code} has been deleted");
         }
 
