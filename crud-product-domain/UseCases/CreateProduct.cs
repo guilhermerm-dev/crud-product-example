@@ -16,7 +16,7 @@ namespace crud_product_domain.UseCases
         public void Execute(Product product)
         {
             if (IsProductAlreadyExists(product.Code))
-                throw new ProductAlreadyExistsException("Product already exists in data base.");
+                throw new ProductAlreadyExistsException($"Product with code {product.Code} already exists in data base.");
             _productRepository.CreateProduct(product);
         }
 
