@@ -9,5 +9,6 @@
     <Folder Include="Entities\" />
     <Folder Include="UseCases\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Error\" />
   </ItemGroup>
 </Project>

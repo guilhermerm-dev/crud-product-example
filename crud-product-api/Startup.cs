@@ -44,7 +44,11 @@ namespace crud_product_api
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler(errors =>
+                {
+                    CustomExceptionHandler.HandleErrors(errors);
+                });
             }
 
             app.UseHttpsRedirection();

@@ -1,5 +1,5 @@
-﻿using System;
-using crud_product_domain.Entities;
+﻿using crud_product_domain.Entities;
+using crud_product_domain.Error;
 using crud_product_domain.Repositories;
 
 namespace crud_product_domain.UseCases
@@ -15,7 +15,8 @@ namespace crud_product_domain.UseCases
 
         public void Execute(Product product)
         {
-            if (IsProductAlreadyExists(product.Code)) throw new Exception();
+            if (IsProductAlreadyExists(product.Code))
+                throw new ProductAlreadyExistsException("Product already exists in data base.");
             _productRepository.CreateProduct(product);
         }
 
