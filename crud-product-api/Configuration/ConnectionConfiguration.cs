@@ -4,9 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace crud_product_api.Configuration
 {
-    public class ConnectionConfiguration
+    public static class ConnectionConfiguration
     {
-        public static void CreateConfiguration(IServiceCollection services, IConfiguration appConfiguration)
+        public static void CreateConnectionConfiguration(this IServiceCollection services, IConfiguration appConfiguration)
         {
             var configuration = new crud_product_shared.Configuration()
             {

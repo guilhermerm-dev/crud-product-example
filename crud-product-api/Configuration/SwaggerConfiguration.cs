@@ -2,9 +2,9 @@
 using Microsoft.OpenApi.Models;
 namespace crud_product_api.Configuration
 {
-    public class SwaggerConfiguration
+    public static class SwaggerConfiguration
     {
-        public static void CreateConfiguration(IServiceCollection services)
+        public static void CreateSwaggerConfiguration(this IServiceCollection services)
         {
             services.AddSwaggerGen(x =>
             {

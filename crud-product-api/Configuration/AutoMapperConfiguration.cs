@@ -6,9 +6,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace crud_product_api.Configuration
 {
-    public class AutoMapperConfiguration
+    public static class AutoMapperConfiguration
     {
-        public static void CreateConfiguration(IServiceCollection services)
+        public static void CreateAutoMapperConfiguration(this IServiceCollection services)
         {
             var mapperConfiguration = new MapperConfiguration(config =>
             {

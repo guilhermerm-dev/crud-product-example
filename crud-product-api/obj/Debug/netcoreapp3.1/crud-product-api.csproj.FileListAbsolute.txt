@@ -20,11 +20,11 @@
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/crud-product-infra.pdb
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/bin/Debug/netcoreapp3.1/crud-product-shared.pdb
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.csprojAssemblyReference.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfoInputs.cache
+/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfo.cs
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.csproj.CoreCompileInputs.cache
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.MvcApplicationPartsAssemblyInfo.cs
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.MvcApplicationPartsAssemblyInfo.cache
-/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfoInputs.cache
-/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.AssemblyInfo.cs
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.RazorTargetAssemblyInfo.cache
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/crud-product-api.csproj.CopyComplete
 /Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-api/obj/Debug/netcoreapp3.1/staticwebassets/crud-product-api.StaticWebAssets.Manifest.cache
