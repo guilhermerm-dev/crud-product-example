@@ -1,29 +1,10 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-api/appsettings.json">
-    <Files>
-      <File FileName="crud-product-api/appsettings.json" Line="11" Column="106" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="crud-product-example" expanded="True">
-            <Node name="crud-product-api" expanded="True">
-              <Node name="appsettings.json" selected="True" />
-            </Node>
-            <Node name="crud-product-infra" expanded="True">
-              <Node name="ConnectionFactory" expanded="True">
-                <Node name="Abstract" expanded="True" />
-              </Node>
-              <Node name="Connectors" expanded="True" />
-            </Node>
-            <Node name="crud-product-shared" expanded="True">
-              <Node name="Enums" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="crud-product-example" expanded="True" selected="True" />
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
