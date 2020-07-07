@@ -20,6 +20,7 @@ namespace crud_product_api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
             services.ResolveDependencies();
             services.CreateAutoMapperConfiguration();
             services.CreateSwaggerConfiguration();
