@@ -1,7 +1,6 @@
 using crud_product_api.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +24,10 @@ namespace crud_product_api
             services.CreateAutoMapperConfiguration();
             services.CreateSwaggerConfiguration();
             services.CreateConnectionConfiguration(Configuration);
+            services.AddCors(options => options.AddPolicy("AllowOrigin", builder =>
+            builder.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod()));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -41,6 +44,8 @@ namespace crud_product_api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("AllowOrigin");
 
             app.UseAuthorization();
 

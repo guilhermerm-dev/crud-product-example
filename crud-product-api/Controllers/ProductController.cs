@@ -4,9 +4,11 @@ using crud_product_api.Dto;
 using crud_product_api.Presenters;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using Microsoft.AspNetCore.Cors;
 
 namespace crud_product_api.Controllers
 {
+    [EnableCors]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductController : ControllerBase

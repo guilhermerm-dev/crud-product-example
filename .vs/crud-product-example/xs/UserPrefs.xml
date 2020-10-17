@@ -1,15 +1,41 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-tests/Entities/ProductTest.cs">
+    <Files>
+      <File FileName="crud-product-domain/Entities/Product.cs" Line="16" Column="49" />
+      <File FileName="crud-product-tests/Entities/ProductTest.cs" Line="16" Column="1" />
+      <File FileName="crud-product-api/Controllers/ProductController.cs" />
+      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="crud-product-example" expanded="True" selected="True" />
+          <Node name="crud-product-example" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="crud-product-api" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="Presenters" expanded="True" />
+              </Node>
+              <Node name="crud-product-domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+                <Node name="UseCases" expanded="True" />
+              </Node>
+              <Node name="crud-product-tests" expanded="True">
+                <Node name="Entities" expanded="True">
+                  <Node name="ProductTest.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.crud-product-api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.src.crud-product-api PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>crud-product-test/crud-product-test.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
