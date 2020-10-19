@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{ABFA266C-5F84-47E4-8ADC-EFA6FA1450A7}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="crud-product-tests/Entities/ProductTest.cs">
     <Files>
-      <File FileName="crud-product-domain/Entities/Product.cs" Line="16" Column="49" />
-      <File FileName="crud-product-tests/Entities/ProductTest.cs" Line="16" Column="1" />
-      <File FileName="crud-product-api/Controllers/ProductController.cs" />
-      <File FileName="crud-product-api/Presenters/ProductPresenter.cs" />
+      <File FileName="crud-product-domain/Entities/Product.cs" Line="13" Column="27" />
+      <File FileName="crud-product-tests/Entities/ProductTest.cs" Line="25" Column="28" />
+      <File FileName="crud-product-shared/Entities/Entity.cs" Line="2" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,12 +16,29 @@
               </Node>
               <Node name="crud-product-domain" expanded="True">
                 <Node name="Entities" expanded="True" />
-                <Node name="Repositories" expanded="True" />
-                <Node name="UseCases" expanded="True" />
+              </Node>
+              <Node name="crud-product-shared" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Entities" expanded="True" />
               </Node>
               <Node name="crud-product-tests" expanded="True">
                 <Node name="Entities" expanded="True">
                   <Node name="ProductTest.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="crud-product-example" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="crud-product-tests" expanded="True">
+                <Node name="crud_product_tests.Entities" expanded="True">
+                  <Node name="ProductTest" expanded="True">
+                    <Node name="ProductShouldBeInvalidWhenNameIsNull" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -38,7 +54,9 @@
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-tests/Entities/ProductTest.cs" relfile="crud-product-tests/Entities/ProductTest.cs" line="39" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

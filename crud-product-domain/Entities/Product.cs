@@ -1,6 +1,9 @@
-﻿namespace crud_product_domain.Entities
+﻿using Flunt.Validations;
+using crud_product_shared.Entities;
+
+namespace crud_product_domain.Entities
 {
-    public class Product
+    public class Product : Entity
     {
         public Product(int code, string name, string description, decimal price, int quantity)
         {
@@ -9,6 +12,11 @@
             Description = description;
             Price = price;
             Quantity = quantity;
+
+            AddNotifications(new Contract()
+                .Requires()
+                .IsNotNullOrEmpty(Name, "Product.Name", "Product Name cant be null or empty")
+                .IsGreaterThan(Price, 0, "Product.Price", "Product Price cant be lower or equals"));
         }
 
         public int Code { get; private set; }

@@ -105,7 +105,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj": {
+                "projectPath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -237,6 +241,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

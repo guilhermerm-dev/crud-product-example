@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Uw/QCts8vAkid0HtgjUpn1gm74cz7751kM3ok1Fhxwjnh4o0j2Jd7BaKkNg3cezF8Tgh28AsObB3JyuakshAGw==",
+  "dgSpecHash": "nQKzkdpawPdykVvj+LCZEL/iX0yfKNUaN7VV3gruH2zkdJiSCdLZ+uOmDcDpXPZhMdIHt47SOOsbwLXq1J+t2g==",
   "success": true,
   "projectFilePath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-shared/crud-product-shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/guilhermerm/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

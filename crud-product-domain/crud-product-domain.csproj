@@ -11,4 +11,7 @@
     <Folder Include="Repositories\" />
     <Folder Include="Error\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\crud-product-shared\crud-product-shared.csproj" />
+  </ItemGroup>
 </Project>

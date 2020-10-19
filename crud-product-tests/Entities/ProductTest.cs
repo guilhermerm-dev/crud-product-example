@@ -32,5 +32,26 @@ namespace crud_product_tests.Entities
             Assert.IsNotNull(product);
             Assert.IsInstanceOfType(product, typeof(Product));
         }
+
+        [TestMethod]
+        public void ProductShouldBeInvalidWhenNameIsNull()
+        {
+            var product = new Product(_code, null, _description, _price, _quantity);
+            Assert.IsTrue(product.Invalid);
+        }
+
+        [TestMethod]
+        public void ProductShouldBeInvalidWhenNameIsEmpty()
+        {
+            var product = new Product(_code, "", _description, _price, _quantity);
+            Assert.IsTrue(product.Invalid);
+        }
+
+        [TestMethod]
+        public void ProductShouldBeInvalidWhenPriceIsEqualTo0()
+        {
+            var product = new Product(_code, _name, _description, 0.0M, _quantity);
+            Assert.IsTrue(product.Invalid);
+        }
     }
 }

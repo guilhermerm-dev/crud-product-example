@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AYdGe2NoHCCwNvuK6T5zFCD8+EFckmkQzuNhZjBlvVKobuUvowmZkzgospn708gtaOpfrODgYZ6WE0WPz1xMDw==",
+  "dgSpecHash": "TaQHLZICguj3bkGY9QIkAx0//LR/KP6E3BE4ttbViUfQFh9eMJSwqxNMaEi+u0iOv8ot1c0xuKtakAXs8Z/XSg==",
   "success": true,
   "projectFilePath": "/Users/guilhermerm/Documents/PersonalProjects/Csharp/crud-product-example/crud-product-infra/crud-product-infra.csproj",
   "expectedPackageFiles": [
     "/Users/guilhermerm/.nuget/packages/dapper/2.0.35/dapper.2.0.35.nupkg.sha512",
+    "/Users/guilhermerm/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512",
     "/Users/guilhermerm/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/guilhermerm/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/guilhermerm/.nuget/packages/npgsql/4.1.3.1/npgsql.4.1.3.1.nupkg.sha512",
